@@ -1,7 +1,5 @@
 import React from 'react'
 import './Login.css'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faUser } from '@fortawesome/free-solid-svg-icons';
 import logo from '../../biology.jpg'
 import '@fortawesome/fontawesome-free/css/all.css'; // Import FontAwesome CSS
 import SignUp from './SignUpForm';
@@ -31,7 +29,6 @@ function Login() {
         </div>
         <div className="forms">
           <div className="form-content">
-
             <LoginForm />
             <SignUp />
           </div>
