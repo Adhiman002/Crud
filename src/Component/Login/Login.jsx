@@ -1,5 +1,8 @@
 import React from 'react'
 import './Login.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+
 function Login() {
   return (
     <div>
@@ -38,7 +41,7 @@ function Login() {
                   </div>
                   <div className="text"><a href="#">Forgot password?</a></div>
                   <div className="button input-box">
-                    <input type="submit" value="Sumbit" />
+                    <input type="submit" value="Submit" />
                   </div>
                   <div className="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
                 </div>
@@ -61,7 +64,7 @@ function Login() {
                     <input type="password" placeholder="Enter your password" required />
                   </div>
                   <div className="button input-box">
-                    <input type="submit" value="Sumbit" />
+                    <input type="submit" value="Submit" />
                   </div>
                   <div className="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
                 </div>
