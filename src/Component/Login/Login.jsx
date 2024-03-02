@@ -1,7 +1,9 @@
 import React from 'react'
 import './Login.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faUser } from '@fortawesome/free-solid-svg-icons';
+import logo from '../../biology.jpg'
+import '@fortawesome/fontawesome-free/css/all.css'; // Import FontAwesome CSS
 
 function Login() {
   return (
@@ -11,14 +13,14 @@ function Login() {
         <input type="checkbox" id="flip" />
         <div className="cover">
           <div className="front">
-            <img src="images/frontImg.jpg" alt="" />
+            <img src={logo} alt="" />
             <div className="text">
               <span className="text-1">Every new friend is a <br /> new adventure</span>
               <span className="text-2">Let's get connected</span>
             </div>
           </div>
           <div className="back">
-            {/* <!--<img className="backImg" src="images/backImg.jpg" alt="">--> */}
+            <img className="backImg" src={logo} />
             <div className="text">
               <span className="text-1">Complete miles of journey <br /> with one step</span>
               <span className="text-2">Let's get started</span>
