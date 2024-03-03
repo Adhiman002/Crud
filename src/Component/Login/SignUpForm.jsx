@@ -1,10 +1,17 @@
 import React from 'react'
-
+import axios from 'axios'
 const SignUp = () => {
-    const handleRegistration = (e) => {
+    const handleRegistration = async (e) => {
         e.preventDefault()
         let formdata = new FormData(e.target)
         let formObject = Object.fromEntries(formdata.entries())
+        const response = await axios.post('http://localhost:5000/registration', JSON.stringify(formObject), {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+
+        console.log(response)
         console.log(formObject)
     }
     return (
