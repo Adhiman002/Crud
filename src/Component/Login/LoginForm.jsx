@@ -19,7 +19,7 @@ const LoginForm = () => {
                     <div className="button input-box">
                         <input type="submit" value="Submit" />
                     </div>
-                    <div className="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+                    <div className="text sign-up-text">Don't have an account? <label htmlFor="flip">Sigup now</label></div>
                 </div>
             </form>
         </div>
